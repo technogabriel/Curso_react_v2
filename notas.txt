@@ -1,0 +1,24 @@
+guia de react:
+https://react.dev/
+para interfaz de usuario/clientes. Lanzada por FB. Pertenece al modulo de librerias para el front-end
+
+*Componentes: pequeños pedazos de codigos que a travès de bubble se une
+
+*apps o empresas: fb/instagrams/wssp/pinterest/netflix/discord/airbnb/ml-mp/uala/brubank
+
+react se genera su entorno a traves de nodeJs(entorno de ejecucion basado en Js)
+
+inicializar una app en react:
+npx create-react-app myapp
+
+**las aplicaciones se basan en un solo html
+**jest => libreria para test de react
+
+pwa => aplicaciones web progresivas
+spa => single page application
+
+codigo jsx => <React.StrictMode> (Js and XML)
+functional component => componente funcional
+
+se determina si es un functional component por la capitalizacion(por ejem App)
+
