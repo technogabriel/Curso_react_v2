@@ -2,7 +2,9 @@ import React from 'react'
 
 const MiPrimerComponente = () => {
   return (
-    <div>MiPrimerComponente</div>
+    <>
+    <h1>MiPrimerComponente</h1>
+    </>
   )
 }
 

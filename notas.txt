@@ -21,4 +21,22 @@ codigo jsx => <React.StrictMode> (Js and XML)
 functional component => componente funcional
 
 se determina si es un functional component por la capitalizacion(por ejem App)
+*********************************************************************************************************************
+10-05-2023:
+
+Next para servidor | Gatsby para apps movile
+vite => para usar como npx
+webpack.js.org => webpack es el compilador
+para crear proyecto con vite:
+npm create vite
+
+Fragment = etiquetas que no ocupan espacio => <> y </>
+
+para que los componentes se comuniquen entre si de forma dinamica, se utilizan las props
+babel(Babel es un "compilador" (o transpilador) para JavaScript)
+
+splitOperator = ...(copia(?
+
+
+
 
