@@ -1,4 +1,5 @@
 import './App.css';
+import Counter from './components/Counter/Counter';
 import MiPrimerComponente from './components/MiPrimerComponente';
 import MiSegundoComponente from './components/MiSegundoComponente/MiSegundoComponente';
 function App() {
@@ -34,7 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <MiPrimerComponente/>
+      {/* <MiPrimerComponente/> */}
       {/* Ejemplo 1 */}
       {/* <MiSegundoComponente bienvenida='Hola Mundo'/> */}
      
@@ -52,7 +53,8 @@ function App() {
        {/* <MiSegundoComponente {...propsObjectTwo} /> */}
 
         {/* Ejemplo #3*/}
-        <MiSegundoComponente persona={persona} saludo={saludo} />
+        {/* <MiSegundoComponente persona={persona} saludo={saludo} /> */}
+        <Counter />
 
 
     </div>

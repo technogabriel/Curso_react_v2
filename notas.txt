@@ -36,6 +36,15 @@ para que los componentes se comuniquen entre si de forma dinamica, se utilizan l
 babel(Babel es un "compilador" (o transpilador) para JavaScript)
 
 splitOperator = ...(copia(?
+*******************************************************************************
+12-05-2023
+hooks useState = variable de estado que nos permite guardar cualquier tipo de informacion en el momento en que lo escribimos
+style para agregar estilo dentro del jsx:
+<div style={{
+        
+    }}>
+los estilos en react va en un doble objeto {{}}
+
 
 
 
