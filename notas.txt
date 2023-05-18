@@ -44,6 +44,10 @@ style para agregar estilo dentro del jsx:
         
     }}>
 los estilos en react va en un doble objeto {{}}
+*******************************************************************************
+17-05-2023:
+Promesas => resolve, reject
+
 
 
 

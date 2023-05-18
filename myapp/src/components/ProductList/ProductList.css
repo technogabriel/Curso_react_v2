@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.card h4{
+    border-radius: 5px;
+    margin: 5px;
+}
+
