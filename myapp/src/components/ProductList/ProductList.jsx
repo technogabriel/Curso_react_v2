@@ -22,12 +22,12 @@ const ProductList = () => {
     }, []);
 
     return (
-        <div>
+        <div >
             {
                 loading ? (<p>Cargando...</p>) : (
-                    <div className= "card"  >
+                    <div className="card"  >
                         {items.map((item) => (
-                            <div>
+                            <div >
                                 <h4 key={item.id}>
                                     <img src={item.photo} alt={item.photo} />
                                     <p>{item.name}</p>
