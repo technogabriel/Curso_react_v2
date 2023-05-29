@@ -11,15 +11,21 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav me-auto mb-2 mb-lg-0">
                         <NavLink className="nav-link w-20" to="/">Home</NavLink>
+                        <NavLink className='nav-link' to="/productos/electronica">Electronica</NavLink>
+                        <NavLink className='nav-link' to="/productos/ropa">Ropa</NavLink>
+                        <NavLink className='nav-link' to="/productos/autos">Autos</NavLink>
+                        <NavLink className='nav-link' to="/productos/hogar">Hogar</NavLink>
                         <NavLink className="nav-link" to="/counter">Counter</NavLink>
                         <NavLink className="nav-link" to="/form">Form</NavLink>
                        
                     </div>
                 </div>
-            </div>
-            <span className='d-flex-row justify-content-end' >
-                <NavLink className="nav-link " to="/cart"><BiCartDownload size={35}/></NavLink>
+                <span className='d-flex-row justify-content-end' >
+                <NavLink className="nav-link " to="/cart"><BiCartDownload size={35}/>
+                </NavLink>
             </span>
+            </div>
+            
         </nav>
         
     )

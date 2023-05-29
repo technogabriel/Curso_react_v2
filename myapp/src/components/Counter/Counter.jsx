@@ -22,7 +22,7 @@ const Counter = () => {
   return (
     <>
     
-    <h3>Cantidad de Clicks : {counter}</h3>
+    <h3 className='m-3'>{counter}</h3>
     <button onClick={handleSum} style={{margin: '5px'}}><GrAdd /></button>
     <button onClick={handleRest}><IoMdRemoveCircleOutline /> </button>
     </>
