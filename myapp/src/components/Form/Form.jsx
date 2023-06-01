@@ -28,7 +28,7 @@ export const Form = () => {
   return (
     <div>
         <h3>Terminar Compra</h3>
-        <form onSubmit={handleSubmit} className='container mt-3'>
+        <form onSubmit={handleSubmit} className='container mt-3 w-50'>
             <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input onChange={(e)=> setEmail(e.target.value)} value={email} type="text" className='form-control' />

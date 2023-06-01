@@ -17,6 +17,7 @@ export const Navbar = () => {
                         <NavLink className='nav-link' to="/productos/hogar">Hogar</NavLink>
                         <NavLink className="nav-link" to="/counter">Counter</NavLink>
                         <NavLink className="nav-link" to="/form">Form</NavLink>
+                        <NavLink className="nav-link" to="/poke">Poke</NavLink>
                        
                     </div>
                 </div>

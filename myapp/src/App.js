@@ -5,6 +5,7 @@ import ProductList from './components/ProductList/ProductList';
 import { Navbar } from './components/Navbar/Navbar';
 import { Cart } from './components/Cart/Cart';
 import { Form } from './components/Form/Form';
+import { PokeApi } from './components/PokeApi/PokeApi';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/counter' element={<Counter/>} />
           <Route path='/cart' element={<Cart/>} />
           <Route path='/form' element={<Form/>} />
+          <Route path ='/poke' element={<PokeApi/>}/>
         </Routes>
       </BrowserRouter>
 
