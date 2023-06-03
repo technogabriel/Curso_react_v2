@@ -1,0 +1,24 @@
+.button{
+    height: 50px;
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navchange{
+    background-color: black;
+}
