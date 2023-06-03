@@ -1,61 +1,32 @@
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
-import MiPrimerComponente from './components/MiPrimerComponente';
-import MiSegundoComponente from './components/MiSegundoComponente/MiSegundoComponente';
+import Counter from './components/Counter/Counter';
+import ProductList from './components/ProductList/ProductList';
+import { Navbar } from './components/Navbar/Navbar';
+import { Cart } from './components/Cart/Cart';
+import { Form } from './components/Form/Form';
+import { PokeApi } from './components/PokeApi/PokeApi';
+
+
 function App() {
-  //ejemplo 2
- // const nombreUno ="adan"
-
-  //ejemplo3
-  const nombreDos = "Gabriel"
-  const edad = 32
-  const pais = "Argentina"
-
-  const propsObject = {
-    nombreDos, 
-    edad, 
-    pais
-  }
-
-  const propsObjectTwo = {
-    nombre: 'adan',
-    edad: 32,
-    pais: 'Argentina',
-    nacionalidad: 'venezonalana' 
-  }
-
-  const persona ={
-    nombre:'Goku',
-    edad: 30
-  }
-
-  const saludo = 'Hola'
-
 
 
   return (
-    <div className="App">
-      <MiPrimerComponente/>
-      {/* Ejemplo 1 */}
-      {/* <MiSegundoComponente bienvenida='Hola Mundo'/> */}
-     
-      {/* Ejemplo 2 */}
-      {/* <MiSegundoComponente nombreUno = {nombreUno}/> */}
+    <>
+    
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route path='/' element={<ProductList/>} />
+          <Route path='/productos/:categoryId' element={<ProductList/>}/>
+          <Route path='/counter' element={<Counter/>} />
+          <Route path='/cart' element={<Cart/>} />
+          <Route path='/form' element={<Form/>} />
+          <Route path ='/poke' element={<PokeApi/>}/>
+        </Routes>
+      </BrowserRouter>
 
-      {/* <MiSegundoComponente {...propsObject} /> */}
-
-      {/* Ejemplos con destructuring */}
-       {/* <MiSegundoComponente nombreUno = {nombreUno}/>  */}
-
-       {/* Ejemplo #2*/}
-       {/* <MiSegundoComponente {...propsObject} /> */}
-
-       {/* <MiSegundoComponente {...propsObjectTwo} /> */}
-
-        {/* Ejemplo #3*/}
-        <MiSegundoComponente persona={persona} saludo={saludo} />
-
-
-    </div>
+    </>
   );
 }
 
