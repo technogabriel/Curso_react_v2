@@ -36,6 +36,21 @@ para que los componentes se comuniquen entre si de forma dinamica, se utilizan l
 babel(Babel es un "compilador" (o transpilador) para JavaScript)
 
 splitOperator = ...(copia(?
+***************************************************************************
+02-06-2023:
+Context:
+createContext = padre
+useContext => hijos
+
+variable declarada para createContext, va en return en forma de tag .provider
+ejem:
+export const themeContext = createContext('')
+return (
+        <themeContext.Provider value={contextValue}>
+            {children}
+        </themeContext.Provider>
+
+    )
 
 
 
