@@ -38,7 +38,11 @@ const ProductList = () => {
                 loading ?
                 <div>Cargando...</div>
                 :
+                <div>
+                    <h3>Productos </h3>
                 <ItemList productos ={items}/>
+                </div>
+
             }
         </>
 

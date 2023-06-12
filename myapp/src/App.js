@@ -6,6 +6,8 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Cart } from './components/Cart/Cart';
 import { Form } from './components/Form/Form';
 import { PokeApi } from './components/PokeApi/PokeApi';
+import { CartProvider } from './components/context/CartContext';
+
 
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
 
   return (
     <>
-    
+    <CartProvider>
       <BrowserRouter>
       <Navbar/>
         <Routes>
@@ -25,6 +27,7 @@ function App() {
           <Route path ='/poke' element={<PokeApi/>}/>
         </Routes>
       </BrowserRouter>
+      </CartProvider>
 
     </>
   );
