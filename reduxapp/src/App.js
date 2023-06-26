@@ -2,6 +2,12 @@ import { Provider, connect } from 'react-redux'
 import { LuPlus } from '../node_modules/react-icons/lu'
 import { createStore } from 'redux'
 import { CgMathMinus } from '../node_modules/react-icons/cg'
+import { Seconds } from './components/Seconds/Seconds'
+import { TodoList } from './components/TodoList/TodoList'
+import { Calculator } from './components/Calculator/Calculator'
+
+
+
 
 //Definir el estado inicial:
 
@@ -22,7 +28,7 @@ const reducer = (state = initialState, action) => {
           count: state.count - 1
         }
       }
-// eslint-disable-next-line
+    // eslint-disable-next-line
     default:
       return state
   }
@@ -60,13 +66,18 @@ const ConnectedCounter = connect(mapStateToProps, mapDispatchToProps)(Counter)
 function App() {
   return (
     <>
-      <div className="container">
-        <h1>Redux App</h1>
+
+      <div className='d flex justify-content-between'>
+        <Seconds />
+        </div>
+        <div className='d flex justify-content-between'>
         <Provider store={store}>
           <ConnectedCounter />
         </Provider>
+        </div>
+        <TodoList/>
+        <Calculator/>
 
-      </div>
     </>
   );
 }
