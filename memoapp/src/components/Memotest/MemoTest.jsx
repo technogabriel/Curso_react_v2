@@ -20,7 +20,8 @@ export const MemoTest = () => {
             isFlipped: false, //todas las cartas estan boca abajo al principio
             isMatched: false //ninguna carta esta emperajada al principio
         }))
-        setCards(generatedCards)//guardamos cartas en el estado
+        const shuflledCards = generatedCards.sort(()=> Math.random()-0.5)
+        setCards(shuflledCards)//guardamos cartas en el estado
 
     }, []);
 
@@ -49,6 +50,7 @@ export const MemoTest = () => {
         //actualizamos las cartas volteadas en el estado
         const updatedCards = cards.map((card) => {
             if (card.id === firstCard.id || card.id === secondCard.id) {
+                console.log(firstCard.id, ' - ' ,secondCard.id )
                 console.log("first", firstCard.symbol, "-", "second ", secondCard.symbol)
                 return { ...card, isFlipped: true }
             } else {
@@ -85,9 +87,9 @@ export const MemoTest = () => {
     const renderCard = (card) => {
         const isFlipped = card.isFlipped || matchedCards.includes(card.id) || flippedCards.includes(card.id)
         const cardClass = `card${isFlipped ? 'flipped' : ''}`
-
+        
         return (
-            <div className={cardClass} key={card.id} onClick={() => handleCardClick(card)}>
+            <div className={cardClass} key={card.id} onClick={() => handleCardClick(card)}  >
                 <div className="container d-flex m-4 align-content-lg-between">
                     {
                         isFlipped ?
@@ -95,7 +97,7 @@ export const MemoTest = () => {
                                 {card.symbol}
                             </div>
                             :
-                            <div className="card-back" >
+                            <div className="card-back " >
                                 <FaQuestion />
                             </div>
                     }
