@@ -53,12 +53,35 @@ Promesas => resolve, reject
 react router dom:
 BrowserRouter -> Routes -> Route
 **************************************************************************
-24-05-2023:
+05-07-2023:
+TypeScript(ts):
+Lenguaje creado por microsoft y es un superconjunto de JavaScript. Tiene tipado statico. Autocompletado y validacion de errores en tiempo real.
+compatibilidad con ECMA.
 
+*Comprobacion de tipos primitivos:
+Ofrece soporte nativo para POO.Comprobacion de tipos estaticos(Type Check)
 
+*Comprobacion de tipos primitivos Number:
+El tipo Number verifica que el contenido de esa variable sea cualquier numero(entero o flotante)
 
+*compilacion de Ts a Js. Es necesario transformarlo a Js
 
+*Comprobacion de cabeceras de funcion:
+se puede indicar al Type Check que lance error si una funcion no cumple con una firma determinada. Esta verificacion nos sirve para segurarnos que una función
 
+*Comprobacion de propiedades de objetos:
+los objetos se validan por el Type Check a traves de una estructura propia denominada interfaz.
 
+deploy de apps:
+SPA SIN HISTORY:
+servidor para paginas estaticas / si no se usa browserRouter(que utiliza la API History) puedes abaratar costos ya que no necesitas nada mas que un lugar donde publicar htlm/css/js. GitHub Pages , por ejemplo.
+CON HISTORY:
+si se usa BrowserRouter, contemplar tambien el costo del servidor. En general las opciones son pagas, y depende de la tecnologia utilizada para el back-end. Azure, heroku...
 
+**PWA:
+Progressive web app -> aplicacion web progresiva. Se sirve bajo HTTPS. Funciona offline(pre cacheo a traves del ServiceWorker). Es instalable, permite acceder a ella directamente desde un icono en el celular y tiene una interfaz en la que no se muestran los controles del navegador, simulando la experiencia de usuario de una app mobile real.
 
+**Identificar una PWA:
+figura un link para instalar
+**desventajas:
+son mas limitadas /despliegue mas complejo(necesita un back) / no estan disponible en Play Store o App Store/consumo de recursos.
